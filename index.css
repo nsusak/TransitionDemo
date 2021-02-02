@@ -1,0 +1,99 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+body {
+    background-color: rgba(231, 221, 221, 0.829);
+}
+h1 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+    color: rgba(6, 52, 151, 0.747);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+div.animal {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+div.animal * {
+    box-sizing: border-box;
+  }
+
+div.animal img {
+    min-width: 220px;
+    max-width: 100%;
+    vertical-align: top;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+ 
+div.animal i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 34px;
+    color: #000000;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff; 
+  }
+
+div.animal.one {
+    background-color: #2b87e28c;
+  }
+ 
+ div.animal.one i {
+    color: #2b86e2d3;
+  }
+  div.animal.two {
+    background-color: #e9f894b4;
+  }
+  div.animal.two i {
+    color:#e9f894f1;
+  }
+  
+  div.animal.three {
+    background-color: #23a78ce3;
+  }
+  div.animal.three i {
+    color:#23a78dec;
+  }
+  
+  div.animal:hover img {
+    opacity: 0.3;
+    filter: grayscale(60%);
+  }
+
+ 
+div.animal * {
+    transition: all .35s ease-in-out;
+  }
+  
+  div.animal i {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  div.animal:hover i {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms 100ms cubic-bezier(0.340, -0.515, 0.875, 1.650);;
+  }
+   
+  
